@@ -29,16 +29,10 @@ function M.blend(foreground, background, alpha)
 end
 
 function M.darken(hex, amount, bg)
-  if type(hex) ~= "string" then
-      return hex
-  end
   return M.blend(hex, bg or M.bg, amount)
 end
 
 function M.lighten(hex, amount, fg)
-  if type(hex) ~= "string" then
-      return hex
-  end
   return M.blend(hex, fg or M.fg, amount)
 end
 
