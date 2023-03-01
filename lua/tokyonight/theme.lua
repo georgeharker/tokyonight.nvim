@@ -14,9 +14,16 @@ function M.setup(opts)
     vim.cmd("hi clear")
   end
 
-  vim.o.termguicolors = true
+  if not opts.limited_colors or vim.fn.has('gui_running') == 1 then
+    vim.o.termguicolors = true
+  end
   vim.g.colors_name = "tokyonight-" .. opts.style
 
+  if opts.limited_colors and vim.fn.has('gui_running') ~= 1 then
+    local termcol = require("tokyonight.termcol")
+    groups = termcol.map_highlights(groups)
+  end
+  
   for group, hl in pairs(groups) do
     hl = type(hl) == "string" and { link = hl } or hl
     vim.api.nvim_set_hl(0, group, hl)
