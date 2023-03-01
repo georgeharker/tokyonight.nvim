@@ -394,7 +394,6 @@ function M.map_highlights(highlights)
   for key, value in pairs(highlights) do
     res[key] = M.map_highlight(value)
   end
-  print(vim.inspect(res))
   return res
 end
 
