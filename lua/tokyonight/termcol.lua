@@ -377,11 +377,13 @@ function M.map_highlight(highlights)
   local res = {}
   for key, value in pairs(highlights) do
     if key == 'fg' then
-        key = 'ctermfg'
-        value = M.rgb(value)
+        local newkey = 'ctermfg'
+        local newvalue = M.rgb(value)
+        res[newkey] = newvalue
     elseif key == 'bg' then
-        key = 'ctermbg'
-        value = M.rgb(value)
+        local newkey = 'ctermbg'
+        local newvalue = M.rgb(value)
+        res[newkey] = newvalue
     end
     res[key] = value
   end
