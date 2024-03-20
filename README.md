@@ -49,6 +49,7 @@ vs
 ### 🍭 Extras
 
 <!-- extras:start -->
+
 - [Alacritty](https://github.com/alacritty/alacritty) ([alacritty](extras/alacritty))
 - [Delta](https://github.com/dandavison/delta) ([delta](extras/delta))
 - [Dunst](https://dunst-project.org/) ([dunst](extras/dunst))
@@ -76,7 +77,7 @@ vs
 ## ⚡️ Requirements
 
 - [Neovim](https://github.com/neovim/neovim) >=
-  [0.7.2](https://github.com/neovim/neovim/releases/tag/v0.7.2)
+  [0.8.0](https://github.com/neovim/neovim/releases/tag/v0.8.0)
 
 ## 📦 Installation
 
