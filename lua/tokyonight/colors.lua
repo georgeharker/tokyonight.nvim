@@ -82,7 +82,11 @@ M.moon = function()
     red1 = "#c53b53", --
     white = "#ffffff",
   }
-  ret.comment = util.blend(ret.comment, ret.bg, "bb")
+  if not vim.fn.has('gui_running') == 1 then
+    ret.comment = ret.bg
+  else
+    ret.comment = util.blend(ret.comment, ret.bg, "bb")
+  end
   ret.git = {
     change = util.blend(ret.blue, ret.bg, "ee"),
     add = util.blend(ret.green, ret.bg, "ee"),
@@ -139,7 +143,11 @@ function M.setup(opts)
     or config.options.styles.floats == "dark" and colors.bg_dark
     or colors.bg
 
-  colors.bg_visual = util.darken(colors.blue0, 0.4)
+  if not vim.fn.has('gui_running') == 1 then
+    colors.bg_visual = util.darken(colors.blue0, 0.7)
+  else
+    colors.bg_visual = util.darken(colors.blue0, 0.4)
+  end
   colors.bg_search = colors.blue0
   colors.fg_sidebar = colors.fg_dark
   -- colors.fg_float = config.options.styles.floats == "dark" and colors.fg_dark or colors.fg
