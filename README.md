@@ -60,6 +60,7 @@ vs
 - [Helix](https://helix-editor.com/) ([helix](extras/helix))
 - [iTerm](https://iterm2.com/) ([iterm](extras/iterm))
 - [Kitty](https://sw.kovidgoyal.net/kitty/conf.html) ([kitty](extras/kitty))
+- [Lazygit](https://github.com/jesseduffield/lazygit) ([lazygit](extras/lazygit))
 - [Lua Table for testing](https://www.lua.org) ([lua](extras/lua))
 - [Prism](https://prismjs.com) ([prism](extras/prism))
 - [Sublime Text](https://www.sublimetext.com/docs/themes) ([sublime](extras/sublime))
