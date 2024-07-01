@@ -59,6 +59,7 @@ vs
 ### 🍭 Extras
 
 <!-- extras:start -->
+
 - [Alacritty](https://github.com/alacritty/alacritty) ([alacritty](extras/alacritty))
 - [Delta](https://github.com/dandavison/delta) ([delta](extras/delta))
 - [Dunst](https://dunst-project.org/) ([dunst](extras/dunst))
@@ -178,7 +179,7 @@ unless `setup` is explicitly called.
 
 ```lua
 require("tokyonight").setup({
-  style = "storm", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
+  style = "moon", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
   light_style = "day", -- The theme is used when the background is set to light
   transparent = false, -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
