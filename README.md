@@ -59,7 +59,6 @@ vs
 ### 🍭 Extras
 
 <!-- extras:start -->
-
 - [Alacritty](https://github.com/alacritty/alacritty) ([alacritty](extras/alacritty))
 - [Delta](https://github.com/dandavison/delta) ([delta](extras/delta))
 - [Dunst](https://dunst-project.org/) ([dunst](extras/dunst))
